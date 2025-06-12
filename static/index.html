@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Matcher</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Resume Matcher</h1>
+
+    <label>Job Description:</label>
+    <textarea id="jd" placeholder="Enter job description"></textarea>
+
+    <label>Paste Resume Text:</label>
+    <textarea id="resume" placeholder="Enter resume text"></textarea>
+    <button onclick="checkMatch()">Check Match</button>
+
+    <hr>
+
+    <h3>OR Upload Resume (PDF only)</h3>
+    <input type="file" id="resume_pdf" accept=".pdf">
+    <button onclick="checkMatchPDF()">Check Match from PDF</button>
+
+    <p id="result"></p>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
